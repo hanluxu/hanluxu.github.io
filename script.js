@@ -5,7 +5,7 @@ function setLanguage(language) {
   const isChinese = language === 'zh';
   root.dataset.lang = isChinese ? 'zh' : 'en';
   root.lang = isChinese ? 'zh-CN' : 'en';
-  document.title = isChinese ? '张悦｜流体力学研究者' : 'Yue Zhang | Fluid Mechanics Researcher';
+  document.title = isChinese ? '徐寒露｜热能工程研究者' : 'Hanlu Xu | Thermal Engineering Researcher';
   languageButton.setAttribute('aria-pressed', String(isChinese));
   languageButton.setAttribute('aria-label', isChinese ? 'Switch to English' : '切换到中文');
   try { localStorage.setItem('site-language', isChinese ? 'zh' : 'en'); } catch (_) {}
